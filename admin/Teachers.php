@@ -8,11 +8,11 @@ if ($_SESSION['type']=='admin') {
     if(isset($_GET['del']))
     {
     $adminid=$_GET['del'];
-    $msgg=mysqli_query($con,"select * from tbl_teachers where rid='$adminid'");
+    $msgg=mysqli_query($con,"select * from tbl_teachers where tno='$adminid'");
     $row=mysqli_fetch_array($msgg);
     $mail=$row['email'];
     $delete=mysqli_query($con,"delete from tbl_login where email='$mail'");
-    $msg=mysqli_query($con,"delete from tbl_steachers where rid='$adminid'");
+    $msg=mysqli_query($con,"delete from tbl_teachers where tno='$adminid'");
     if($msg)
     {
     $alrt=1;
