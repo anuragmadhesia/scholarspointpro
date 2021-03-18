@@ -97,7 +97,7 @@ include('includes/dbconnection.php');?>
         </style>
             <script src="js/typed.min.js"> </script>
             <div class="indexbackground">
-            	<div class="indexbox container" id="home" style="padding-top: 200px;">
+            	<div class="indexbox container" id="home" style="padding-top: 240px;">
                     <div class="example">
                         <span class="mytext down responsivetext">WELCOME TO </span>
                         <span class="welcome down animate responsivetext">SCHOLAR’S POINT PRO COACHING CLASSES<br></span>
