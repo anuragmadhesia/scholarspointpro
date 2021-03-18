@@ -107,3 +107,8 @@ code span {
     color: green;
 }
 
+@media (max-width:767px){
+    #alertBox {
+        width: 320px;
+    }
+}
