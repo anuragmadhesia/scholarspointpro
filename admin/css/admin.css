@@ -1,0 +1,101 @@
+.navbar{
+    width: 100%;
+}
+/*Header*/
+.logo{
+    height:60px;
+    border-radius:20%
+}
+.logo:hover{
+    border:4px solid red;
+}
+/* Main Page */
+.mainbody{
+    margin: 0;
+    padding: 0;
+    background: #e77d1a;
+    position: relative;
+    height: auto;
+    min-height: 500px;
+    min-width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+/*admin header*/
+.admin_header{
+    margin-top:-25px;
+    height: 95px;
+    width: 100%;
+    background-color: #343a40;
+    color: gold;
+    text-align: center;
+}
+.admin_header p{
+    position: relative;
+    top: 30%;
+}
+/*footer*/
+.footer{
+    height: 60px;
+    width: 100%;
+    background-color: #343a40;
+    color: gold;
+    text-align: center;
+}
+.footer p{
+    position: relative;
+    top: 30%;
+}
+/*Index page*/
+.row a{
+    font-size: 100px;
+    color: black;
+}
+.row a:hover{
+    color: blue;
+}
+.row p{
+    font-size: 22px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 20px;
+}
+
+/*Change password page*/
+.cpform {
+    color: gold;
+    padding-top: 20px;
+        width: 340px;
+        margin: 50px auto;
+    }
+.cpform form {
+        margin-bottom: 15px;
+        background: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 30px;
+    }
+.cpform h2 {
+        margin: 0 0 15px;
+    }
+    .form-control, .btn {
+        min-height: 38px;
+        border-radius: 2px;
+    }
+
+ /*login page*/
+.login-form {
+		width: 340px;
+    	margin: 50px auto;
+	}
+    .login-form form {
+    	margin-bottom: 15px;
+        background: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 30px;
+    }
+    .login-form h2 {
+        margin: 0 0 15px;
+    }
+    .form-control, .btn {
+        min-height: 38px;
+        border-radius: 2px;
+    }
