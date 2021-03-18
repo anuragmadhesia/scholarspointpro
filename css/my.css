@@ -1,0 +1,303 @@
+/*Header*/
+.logo{
+    height:60px;
+    border-radius:50%;
+}
+.logo:hover{
+    border:4px solid red;
+}
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    margin:0;
+    background: #343a40 !important;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+@media screen and (min-width:966px) {.bts2{padding-left:92%}}
+@media screen and (max-width:966px) {.bts2{padding-left:86%}}
+@media (max-width:887px){.map iframe{width:200px;}}
+@media (max-width:626px){.map iframe{width:150px;}.bts2{padding-left:83%}}
+@media (max-width:575px){.map iframe{width:280px;}}
+@media screen and (min-width: 601px) {
+  div.example {font-size: 40px;}
+  .down{float:none;}
+  .chintu{margin-left:110px;}
+}
+@media screen and (max-width: 600px) {
+  div.example {font-size: 28px;}
+  .down{float:left;}
+  .chintu{margin-left:10px;}
+}
+@media screen and (max-width: 600px) {
+    .register-form{
+      max-width: 340px;
+      margin: 110px auto;
+  }
+}
+/* Background Image */
+.mainbody{
+    margin:0;
+    padding:0;
+    position: relative;
+    background:linear-gradient(rgba(241, 7, 19, 0.788),rgba(36, 124, 58, 0.7));
+    /* background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/wall.jpg); */
+    background-repeat:no-repeat;
+    min-width: 100%;
+    min-height: 630px;
+    background-size: cover;
+    overflow: hidden;
+}
+/*index page*/
+.indexbox{
+    padding-top:250px;
+    padding-bottom:200px;
+}
+.servicebox{
+    background-color:darkslateblue;
+    text-align:center;
+    min-height:550px;
+}
+.servicebox h1{
+    font-size:50px;
+}
+.blk{
+    background-color:#fff;
+    margin:30px;
+    height:350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn-round1{
+    position:relative;
+    top:120%;
+    left:0%;
+    height:100px;
+    min-width:300px;
+    text-align:center;
+    vertical-align:middle;
+    line-height:90px;
+    font-size:20px;
+    font-weight:500;
+    background-color:greenyellow;
+    border: 1px solid blue;
+    color:white;
+    margin-top:20px;
+    margin-right: 20px;
+    border-radius:30px;
+    transition:1s;
+}
+.btn-round1:hover{
+    border: 3px solid blue;
+    border-radius:20px;
+    margin-right: 20px;
+    font-weight:400;
+}
+.mytext{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+}
+.welcome{
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:400;
+}
+
+/*login page*/
+.login-form {
+		max-width: 340px;
+    	margin: 150px auto;
+	}
+    .login-form form {
+    	margin-bottom: 15px;
+        background:linear-gradient(rgb(36, 201, 212),white);
+        background-repeat:no-repeat;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 30px;
+    }
+    .login-form h2 {
+        margin: 0 0 15px;
+    }
+    .form-control, .btn {
+        min-height: 38px;
+        border-radius: 2px;
+    }
+         .login-form input{
+        background:none;
+        color:#fff;
+    }
+    .login-form textarea {
+        background:none;
+        color:#fff;
+    }
+
+/*register page*/
+.register-form{
+		max-width: 500px;
+    	margin: 110px auto;
+	}
+.register-form form {
+    	margin-bottom: 15px;
+        background-color: #3f084dce;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 30px;
+    }
+    .register-form input{
+        background:none;
+        color:#fff;
+    }
+        .register-form select{
+        background:none;
+        color:#fff;
+    }
+                .register-form option{
+        background:black;
+        color:#fff;
+    }
+            .register-form  textarea {
+        background:none;
+        color:#fff;
+    }
+    .register-form h2 {
+        margin: 0 0 15px;
+    }
+    .register-control, .btn {
+        min-height: 38px;
+        border-radius: 2px;
+    }
+
+    /*About page*/
+.aboutpage{
+    color:gold;
+    min-height:570px;
+}
+.mymargin{
+    margin-top:50px
+}
+.mymargin h2{
+    color:red;
+}
+
+/*review page*/
+.review-form {
+    	margin: 30px auto;
+	}
+    .review-form h2 {
+        text-align:center;
+        color:#03fc1c;
+    }
+    .review-form strong {
+        color:gold;
+        font-size: 30px;
+    }
+    .review-form i {
+        font-size:30px;
+        color:blue;
+    }
+    .review-form span{
+        color:aliceblue;
+        font-family:serif;
+        font-size: 20px;
+    }
+    .review-form hr {
+        border: 1px solid #bf0cc2;
+    }
+
+.feedback-form {
+		max-width: 400px;
+    	margin: 50px auto;
+	}
+    .feedback-form form {
+    	margin-bottom: 15px;
+        background: rgb(68, 55, 68);
+        box-shadow: 0 4px 4px 4px rgba(191, 12, 194, 5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 30px;
+    }
+    .feedback-form h2 {
+        color: #03fc1c
+    }
+     .feedback-form input{
+        background:none;
+        color:#fff;
+    }
+    .feedback-form textarea {
+        background:none;
+        color:#fff;
+    }
+
+/*Admin index*/
+svg {
+  width: 70px;
+  height: 70px;
+}
+svg:hover {
+  fill:greenyellow;
+}
