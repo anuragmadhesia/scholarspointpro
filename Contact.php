@@ -1,27 +1,25 @@
 <?php session_start();
 include('includes/dbconnection.php');
-$alrt=0;
+$alrt = 0;
 //Code for Registration
-if(isset($_POST['signup']))
-{
-	$name=$_POST['txtname'];
-	$email=$_POST['txtemail'];
-    $mobile=$_POST['txtmobile'];
-    $msg=$_POST['txtmsg'];
+if (isset($_POST['signup'])) {
+    $name = $_POST['txtname'];
+    $email = $_POST['txtemail'];
+    $mobile = $_POST['txtmobile'];
+    $msg = $_POST['txtmsg'];
     date_default_timezone_set('Asia/Kolkata');
     $date = date('d-m-y h:i:s');
-    $msg=mysqli_query($con,"insert into tbl_contact(name,email,phone,msg,cdt) values('$name','$email','$mobile','$msg','$date')");
-if($msg)
-{
-	$alrt=3;
-}
-else{
-    $alrt=1;
-}
+    $msg = mysqli_query($con, "insert into tbl_contact(name,email,phone,msg,cdt) values('$name','$email','$mobile','$msg','$date')");
+    if ($msg) {
+        $alrt = 3;
+    } else {
+        $alrt = 1;
+    }
 }
 ?>
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -38,46 +36,55 @@ else{
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    <script>window.addEventListener("hashchange", function () { scrollBy(0, -85) })</script>
-    <title>Contacts  US</title>
+    <script>
+    window.addEventListener("hashchange", function() {
+        scrollBy(0, -85)
+    })
+    </script>
+    <title>Contacts US</title>
 </head>
+
 <body>
-<?php include('includes/header.php');?>
+    <?php include('includes/header.php'); ?>
     <div class="mainbody">
-    <?php
-    if($alrt==1){
-        echo "<script>alert('Unable to Contact..');</script>";
-    }
-    elseif($alrt==3){
-        echo "<script>alert('Thanks for Contact...');</script>";
-    }
-    $alrt=0;
-    ;?>
-    <div class="login-form" style="font-family:'Bell MT';color:#fff;">
-    <form action="" method="post" enctype="multipart/form-data">
-        <h2 class=" text-center" style="color:greenyellow;">
-            CONTACT US
-        </h2>
-        <div class="form-group">
-            <input type="text" name="txtname" class="form-control" placeholder="Your Name" required="required" onkeypress="return checkChar(event)">
+        <?php
+        if ($alrt == 1) {
+            echo "<script>alert('Unable to Contact..');</script>";
+        } elseif ($alrt == 3) {
+            echo "<script>alert('Thanks for Contact...');</script>";
+        }
+        $alrt = 0;; ?>
+        <div class="login-form" style="font-family:'Bell MT';color:#fff;">
+            <form action="" method="post" enctype="multipart/form-data">
+                <h2 class=" text-center" style="color:greenyellow;">
+                    CONTACT US
+                </h2>
+                <div class="form-group">
+                    <input type="text" name="txtname" class="form-control" placeholder="Your Name" required="required"
+                        onkeypress="return checkChar(event)">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="txtemail" class="form-control" placeholder="Your Email"
+                        required="required" id="IdMail" onkeyup="EmailValid()"><br />
+                    <center><span id="ShowEmailMsg"></span></center>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="txtmobile" class="form-control" placeholder="Your Contact"
+                        required="required" onkeypress="return checkNum(event)">
+                </div>
+                <div class="form-group">
+                    <textarea name="txtmsg" class="form-control" placeholder="Write Your Message Here.." rows="3"
+                        required="required" onkeypress="return checkValid(event)"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block" name="signup">SEND</button>
+                </div>
+            </form>
         </div>
-        <div class="form-group">
-            <input type="email" name="txtemail" class="form-control" placeholder="Your Email" required="required" id="IdMail" onkeyup="EmailValid()"><br /><center><span id="ShowEmailMsg"></span></center>
-        </div>
-        <div class="form-group">
-            <input type="text" name="txtmobile" class="form-control" placeholder="Your Contact" required="required" onkeypress="return checkNum(event)">
-        </div>
-        <div class="form-group">
-            <textarea name="txtmsg" class="form-control" placeholder="Write Your Message Here..." rows="3" required="required" onkeypress="return checkValid(event)"></textarea>
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-block" name="signup">SEND</button>
-        </div>
-    </form>
-    </div>
     </div>
 
-    <?php include('includes/footer.php');?>
+    <?php include('includes/footer.php'); ?>
 
 </body>
+
 </html>
